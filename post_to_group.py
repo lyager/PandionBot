@@ -25,5 +25,4 @@ CHAT_ID = CPARSER.get('global', 'chat_id')
 
 bot = telepot.Bot(API_KEY)
 
-# bot.message_loop(got_message)
 bot.sendMessage(CHAT_ID, "Hello there")

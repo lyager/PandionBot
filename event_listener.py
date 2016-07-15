@@ -41,5 +41,7 @@ bot = telepot.Bot(API_KEY)
 
 bot.message_loop(got_message)
 while True:
-    pprint(bot.getUpdates())
+    updates = bot.getUpdates()
+    if updates:
+        pprint(updates)
     time.sleep(5)
